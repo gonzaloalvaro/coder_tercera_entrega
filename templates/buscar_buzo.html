@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+{% block contenido %}
+
+<form action="/buscar_buzo/" method="GET">
+    <input type="text" name="nombre" id = "nombre">
+    <input type="submit" value="buscar">
+
+</form>
+
+
+{% endblock %}

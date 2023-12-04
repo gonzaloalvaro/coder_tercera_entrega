@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block contenido %}
+
+<form action="/stock/crear_buzo/" method="post">
+    
+    {% csrf_token %}
+    <p> nombre del buzo: <input type = "text" name="nombre">
+    <p> descripcion del buzo: <input type = "text" name="descripcion">
+    <p> talle del buzo: <input type = "text" name="talle">
+    <p> cantidad en stock: <input type = "number" name="cantidad en stock">
+    <input type = "submit" value = "Enviar">
+    </form>
+
+{% endblock %}
